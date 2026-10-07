@@ -1,0 +1,1 @@
+export default { content: ['./index.html','./src/**/*.{js,jsx}'], theme:{extend:{fontFamily:{head:['Zen Kaku Gothic New','Noto Sans JP','sans-serif'],body:['Noto Sans JP','sans-serif']}}}, plugins: [] }

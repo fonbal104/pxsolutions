@@ -1,0 +1,8 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+:root{--bg:#050d24;--bg2:#0a1a3f;--fg:#eaf0ff;--muted:#9db0d6;--card:rgba(255,255,255,.05);--line:rgba(255,255,255,.12);--accent:#3b82f6;--accent2:#22d3ee;--ft:#161e2a;--ft2:#232e3f;--ftfg:#d5dbe6}
+:root.light{--bg:#f6f8fd;--bg2:#e6edfa;--fg:#0b1b3f;--muted:#4f5f88;--card:#fff;--line:rgba(11,27,63,.12);--accent:#1d4ed8;--accent2:#0891b2;--ft:#dce5f6;--ft2:#c9d6ee;--ftfg:#0b1b3f}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--fg);font-family:'Noto Sans JP',sans-serif;line-height:1.9;transition:background .3s,color .3s}
+h1,h2,h3{font-family:'Zen Kaku Gothic New','Noto Sans JP',sans-serif;line-height:1.4}
+:focus-visible{outline:2px solid var(--accent2);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
