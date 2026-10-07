@@ -132,7 +132,7 @@ function Contact({ t }) {
     setS('sending'); setMsg('')
     const d = Object.fromEntries(new FormData(form))
     try {
-      const r = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...d, token }) })
+      const r = await fetch('/contact.php', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...d, token }) })
       if (!r.ok) throw 0
       setS('idle'); setMsg(t.ok); form.reset(); cap.current.reset()
     } catch { setS('idle'); setMsg(t.ng); cap.current?.reset() }
